@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+
+:root {
+    --light-orange: #FF8B66;
+    --dark-orange: #FF5722;
+}
+
 body {
   line-height: 1.4;
   font-family: "Titillium Web", sans-serif;
@@ -49,7 +55,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-  color: #f0326b;
+  color: var(--dark-orange);
 }
 
 .btn-main, .btn-main-sm {
@@ -560,6 +566,15 @@ a:focus, a:hover {
   margin: 0;
 }
 
+.navbar-brand,
+.navbar-brand:visited {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: var(--dark-orange);
+}
+
 .hero-area {
   padding: 150px 0;
   position: relative;
@@ -918,7 +933,6 @@ a:focus, a:hover {
 .contact-meta-block {
   margin-top: 30px;
   padding: 40px 0;
-  min-height: 250px;
   text-align: center;
   background: #fff;
   border-radius: 3px;
